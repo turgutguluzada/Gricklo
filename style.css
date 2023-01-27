@@ -580,7 +580,72 @@ header {
   margin: 0 auto;
 }
 
+.pop-card .pop-img {
+  position: relative;
+  height: 200px;
+}
+
 .pop-card .pop-img img {
   width: 344px;
   height: 200px;
+} 
+
+.pop-card .pop-img .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  background-color: rgb(16, 20, 57);
+  opacity: 0.3;
+}
+
+
+.pop-card {
+  position: relative;
+  width: 344px; 
+}
+
+.pop-card .pop-text {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 7px 15px;
+  border-radius: 30px;
+  z-index: 5;
+}
+
+.pop-card .pop-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 7px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.pop-card .pop-icon i {
+  color: #fff;
+  z-index: 5;
+}
+
+.pop-card .pop-rating ul {
+  display: flex;
+  top: 160px;
+  left: 30px;
+  z-index: 88;
+}
+
+
+.pop-card .pop-rating ul li i {
+  color: coral;
+  z-index: 6;
+}
+
+.pop-card .pop-rating ul li span {
+  color: #fff;
+  z-index: 5;
 }
